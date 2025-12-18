@@ -1,3 +1,32 @@
+# Caso: ParkingExpress - Parqueadero del Centro
+
+## Resumen del Proyecto
+[cite_start]Este proyecto consiste en el desarrollo de un sistema **CRUD** (Crear, Leer, Actualizar y Eliminar) completo utilizando el framework **Laravel**[cite: 1, 2]. [cite_start]La aplicación, denominada **ParkingExpress**, permite gestionar de manera eficiente el ingreso y salida de vehículos en un parqueadero, almacenando información crítica como la placa, el tipo de vehículo, el nombre del propietario y observaciones adicionales[cite: 110, 111, 112, 113, 228].
+
+**Características técnicas:**
+* **Framework:** Laravel 12.
+* [cite_start]**Base de Datos:** MySQL[cite: 7].
+* [cite_start]**Frontend:** Bootstrap 5 para un diseño responsivo[cite: 221].
+* **Testing:** Pest PHP.
+
+---
+
+## Evidencias del Desarrollo (Capturas de Pantalla)
+
+### 1. Listado Principal de Vehículos (Index)
+[cite_start]En esta vista se puede observar el inventario actual de vehículos en el parqueadero, incluyendo la fecha y hora exacta de ingreso[cite: 242, 270].
+
+<img width="1600" height="798" alt="image" src="https://github.com/user-attachments/assets/0488f549-114e-4d9b-8224-cd90a3961bed" />
+
+
+
+   php artisan migrate
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

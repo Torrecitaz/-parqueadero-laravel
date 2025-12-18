@@ -14,19 +14,31 @@ Este proyecto consiste en el desarrollo de un sistema **CRUD** completo utilizan
 
 ### 1. Preparación del Entorno y Base de Datos
 Uso de la interfaz de comandos de Artisan para ejecutar migraciones y generar automáticamente el modelo, controlador y migración del vehículo.
+<img width="1024" height="354" alt="image" src="https://github.com/user-attachments/assets/9bd03a4b-b6b9-4ab4-8a46-95319024b6c8" />
+
 
 
 ### 2. Listado Principal de Vehículos (Index)
 Vista general que muestra todos los vehículos registrados actualmente, permitiendo ver la placa, tipo, propietario y fecha de ingreso.
+<img width="1600" height="412" alt="image" src="https://github.com/user-attachments/assets/1403b122-3587-4516-815e-6b36d73bb975" />
+
 
 ### 3. Registro de Nuevo Ingreso (Create)
 Interfaz diseñada para el registro de vehículos con validación de campos obligatorios para asegurar la integridad de los datos.
+<img width="691" height="835" alt="image" src="https://github.com/user-attachments/assets/83b6b94f-638b-46c0-8d18-82888bf6ce24" />
+
 
 ### 4. Actualización de Información (Edit)
 Formulario prellenado que permite la modificación de los datos de un vehículo existente para corregir información.
+<img width="833" height="754" alt="image" src="https://github.com/user-attachments/assets/cfb9a3ad-57f5-4b7a-a2f3-d43a6795ab0c" />
+
 
 ### 5. Control de Salida y Eliminación
 Implementación de la funcionalidad de borrado con confirmación visual para gestionar la salida definitiva de los vehículos.
+<img width="1600" height="409" alt="image" src="https://github.com/user-attachments/assets/07e71200-4bcd-4a89-85cf-22a73defff77" />
+<img width="1600" height="335" alt="image" src="https://github.com/user-attachments/assets/9dbe1216-e48d-4a8d-abfc-2727ffe74209" />
+
+
 
 ---
 
@@ -48,8 +60,7 @@ Implementación de la funcionalidad de borrado con confirmación visual para ges
 Se han definido tres categorías principales para la selección en el sistema: **Automóvil, Motocicleta y Camioneta**.
 
 ### 3. ¿Se puede eliminar registros?
-**Respuesta:** Sí, se permite la eliminación de registros para mantener la base de datos limpia y actualizada cuando un vehículo abandona el establecimiento.
-
+**Respuesta:** Sí, es posible gracias al método `delete()` de Eloquent en el Modelo porque se implementó para gestionar la salida física de los vehículos del establecimiento, permitiendo que el controlador remueva la fila correspondiente en MySQL y así mantener la base de datos optimizada y con información real.
 ---
 
 ## Comandos Útiles

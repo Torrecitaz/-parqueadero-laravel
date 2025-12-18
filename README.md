@@ -1,11 +1,10 @@
-# Caso: ParkingExpress - Parqueadero del Centro
+# Caso: ParkingExpress - Parqueadero del Centro 🐱🚗
 
-## Resumen del Proyecto
-[cite_start]Este proyecto consiste en el desarrollo de un sistema **CRUD** (Crear, Leer, Actualizar y Eliminar) completo utilizando el framework **Laravel**[cite: 1, 2]. [cite_start]La aplicación, denominada **ParkingExpress**, permite gestionar de manera eficiente el ingreso y salida de vehículos en un parqueadero, almacenando información crítica como la placa, el tipo de vehículo, el nombre del propietario y observaciones adicionales[cite: 110, 111, 112, 113, 228].
+[cite_start]Este proyecto consiste en el desarrollo de un sistema **CRUD** completo utilizando el framework **Laravel 12**[cite: 1, 2]. [cite_start]La aplicación, denominada **ParkingExpress**, permite gestionar de manera eficiente el ingreso y salida de vehículos en un parqueadero, almacenando información crítica como la placa, el tipo de vehículo, el nombre del propietario y observaciones adicionales[cite: 110, 111, 112, 113, 228].
 
 **Características técnicas:**
-* **Framework:** Laravel 12.
-* [cite_start]**Base de Datos:** MySQL[cite: 7].
+* [cite_start]**Framework:** Laravel 12[cite: 1].
+* [cite_start]**Base de Datos:** MySQL[cite: 7, 79].
 * [cite_start]**Frontend:** Bootstrap 5 para un diseño responsivo[cite: 221].
 * **Testing:** Pest PHP.
 
@@ -13,11 +12,54 @@
 
 ## Evidencias del Desarrollo (Capturas de Pantalla)
 
-### 1. Listado Principal de Vehículos (Index)
-[cite_start]En esta vista se puede observar el inventario actual de vehículos en el parqueadero, incluyendo la fecha y hora exacta de ingreso[cite: 242, 270].
+### 1. Preparación del Entorno y Base de Datos
+[cite_start]Uso de la interfaz de comandos de Artisan para ejecutar migraciones y generar automáticamente el modelo, controlador y migración del vehículo[cite: 94, 98].
 
-<img width="1600" height="798" alt="image" src="https://github.com/user-attachments/assets/0488f549-114e-4d9b-8224-cd90a3961bed" />
 
+### 2. Listado Principal de Vehículos (Index)
+[cite_start]Vista general que muestra todos los vehículos estacionados actualmente, permitiendo ver la placa, tipo, propietario y fecha de ingreso[cite: 174, 242, 270].
+
+
+### 3. Registro de Nuevo Ingreso (Create)
+[cite_start]Interfaz diseñada para el registro de vehículos con validación de campos obligatorios para asegurar la integridad de los datos[cite: 181, 288, 302].
+
+
+### 4. Actualización de Información (Edit)
+[cite_start]Formulario prellenado que permite la modificación de los datos de un vehículo existente[cite: 190, 323, 334].
+
+
+### 5. Control de Salida y Eliminación
+[cite_start]Implementación de la funcionalidad de borrado con confirmación para gestionar la salida de los vehículos[cite: 204, 275, 279].
+
+
+---
+
+## Mis Decisiones de Diseño
+
+### 1. Tabla de Base de Datos
+[cite_start]**Nombre de la tabla:** `vehiculos` [cite: 108, 126]
+
+| Campo | Tipo | ¿Obligatorio? |
+| :--- | :--- | :--- |
+| `id` | BigInt (Auto-increment) | [cite_start]Sí [cite: 108] |
+| `placa` | String (10) | [cite_start]Sí [cite: 110] |
+| `tipo` | String (20) | [cite_start]Sí [cite: 111] |
+| `propietario` | String (100) | [cite_start]No (Nullable) [cite: 112] |
+| `observaciones` | Text | [cite_start]No (Nullable) [cite: 113] |
+| `created_at` | Timestamp | [cite_start]Sí [cite: 114] |
+
+### 2. Tipos de vehículo
+[cite_start]Se han definido tres categorías principales para la selección en el sistema: **Automóvil, Motocicleta y Camioneta**[cite: 304, 305, 306].
+
+### 3. ¿Se puede eliminar registros?
+[cite_start]**Respuesta:** Sí, se permite la eliminación de registros para mantener la base de datos limpia y actualizada cuando un vehículo abandona el establecimiento[cite: 153, 204].
+
+---
+
+## Comandos Útiles
+* [cite_start]**Ejecutar migraciones:** `php artisan migrate`[cite: 94, 408].
+* [cite_start]**Crear Modelo/Controlador:** `php artisan make:model Vehiculo -mcr`[cite: 98].
+* [cite_start]**Ver lista de rutas:** `php artisan route:list`[cite: 408].
 
 
    php artisan migrate

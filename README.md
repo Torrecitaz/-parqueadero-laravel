@@ -54,8 +54,8 @@ Implementación de la funcionalidad de borrado con confirmación visual para ges
 | `id` | BigInt (Auto-increment) | Sí |
 | `placa` | String (10) | Sí |
 | `tipo` | String (20) | Sí |
-| `propietario` | String (100) | No (Nullable) |
-| `observaciones` | Text | No (Nullable) |
+| `propietario` | String (100) | No  |
+| `observaciones` | Text | No  |
 | `created_at` | Timestamp | Sí |
 
 ### 2. Tipos de vehículo
@@ -141,5 +141,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
-<img width="1600" height="412" alt="image" src="https://github.com/user-attachments/assets/c237a36e-3590-465b-a862-3f42d57756a4" />
 

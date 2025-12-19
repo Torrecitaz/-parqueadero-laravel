@@ -1,4 +1,4 @@
-# Caso: ParkingExpress - Parqueadero del Centro 🐱🚗
+# Caso: ParkingExpress - Parqueadero del Centro
 
 Este proyecto consiste en el desarrollo de un sistema **CRUD** completo utilizando el framework **Laravel 12**. La aplicación, denominada **ParkingExpress**, permite gestionar de manera eficiente el ingreso y salida de vehículos en un parqueadero, almacenando información crítica como la placa, el tipo de vehículo, el nombre del propietario y observaciones adicionales.
 
@@ -39,6 +39,8 @@ Implementación de la funcionalidad de borrado con confirmación visual para ges
 <img width="1600" height="335" alt="image" src="https://github.com/user-attachments/assets/9dbe1216-e48d-4a8d-abfc-2727ffe74209" />
 
 
+### 6. Interfaz usable en móvil
+<img width="735" height="862" alt="image" src="https://github.com/user-attachments/assets/5f9a0fca-d4b8-49f6-a9b1-4134f6da350f" />
 
 ---
 
